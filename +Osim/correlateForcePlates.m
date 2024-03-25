@@ -12,8 +12,8 @@ function sides = correlateForcePlates(trcTable, fpTable,varargin)
 % the right foot).
 
 p=inputParser();
-p.addParameter('LeftMarkers',{'L_Heel','L_Toe_Tip'},@iscell);
-p.addParameter('RightMarkers',{'R_Heel','R_Toe_Tip'},@iscell);
+p.addParameter('LeftMarkers',{'LFCC','LDP1'},@iscell);
+p.addParameter('RightMarkers',{'RFCC','RDP1'},@iscell);
 p.parse(varargin{:});
 LeftMarkers=p.Results.LeftMarkers;
 RightMarkers=p.Results.RightMarkers;
